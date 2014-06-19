@@ -5,3 +5,5 @@ Using the SparkCore (a wifi-enabled Arduino for $30) and a DHT-22 Temperature an
 - Storing the data
 - Charting the data
 - Enabling others to reuse this project
+
+When it's powered on, you can currently see the temperature in my greenhouse here <http://greenhouse-watchman.herokuapp.com/>
