@@ -1,0 +1,15 @@
+development:
+  sessions:
+    default:
+      database: greenhouse_watchman
+      hosts:
+        - localhost:27017
+
+
+#production:
+  #host:
+  #port: 1000
+  #username: <%= ENV['PROD_DB_USERNAME'] %>
+  #password: <%= ENV['PROD_DB_PASSWORD'] %>
+  #database: greenhouse_watchman
+

@@ -1,5 +1,3 @@
-require 'dotenv'
-Dotenv.load
+require File.join(File.dirname(__FILE__), 'application')
 
-require './app'
-run Sinatra::Application
+run GreenhouseWatchman
