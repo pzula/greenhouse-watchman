@@ -8,4 +8,8 @@ class GreenhouseWatchman < Sinatra::Base
     all_data = Temperature.all + Humidity.all
     all_data.to_json
   end
+
+  get '/work' do
+    SparkcoreWorker.new.perform
+  end
 end
