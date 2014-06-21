@@ -8,3 +8,5 @@ gem 'dotenv'
 gem 'bson'
 gem 'mongo'
 gem 'mongoid'
+
+gem 'sidekiq'
