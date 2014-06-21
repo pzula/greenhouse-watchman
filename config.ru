@@ -1,5 +1,5 @@
 require 'dotenv'
 Dotenv.load
 
-require './greenhouse'
+require './app'
 run Sinatra::Application
