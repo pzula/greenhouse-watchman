@@ -10,3 +10,6 @@ gem 'mongo'
 gem 'mongoid'
 
 gem 'sidekiq'
+gem 'faraday'
+
+gem 'pry'
