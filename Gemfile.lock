@@ -12,6 +12,9 @@ GEM
     builder (3.0.4)
     celluloid (0.15.2)
       timers (~> 1.1.0)
+    clockwork (0.7.5)
+      activesupport
+      tzinfo
     coderay (1.1.0)
     connection_pool (2.0.0)
     dotenv (0.11.1)
@@ -74,6 +77,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson
+  clockwork
   dotenv
   faraday
   mongo

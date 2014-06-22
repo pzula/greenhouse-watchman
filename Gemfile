@@ -11,5 +11,6 @@ gem 'mongoid'
 
 gem 'sidekiq'
 gem 'faraday'
+gem 'clockwork'
 
 gem 'pry'
