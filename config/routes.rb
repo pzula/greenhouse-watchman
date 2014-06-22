@@ -10,6 +10,6 @@ class GreenhouseWatchman < Sinatra::Base
   end
 
   get '/work' do
-    SparkcoreWorker.new.perform
+    SparkcoreWorker.perform_async
   end
 end

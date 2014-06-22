@@ -1,9 +1,13 @@
 class SparkcoreWorker
   include Sidekiq::Worker
 
-  def perform
+  $redis = Redis.new
+
+  def perform_async(msg ="You forgot a message")
     logger.info "Kicking off the SparkCore Worker!!"
-    store_data
+
+    $redis.lpush("get_sparkcore_data", store_data)
+
     logger.info "SparkCore Worker is done"
   end
 
