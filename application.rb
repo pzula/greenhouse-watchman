@@ -19,5 +19,9 @@ class GreenhouseWatchman < Sinatra::Base
 end
 
 module Clockwork
-  every(1.minutes, 'sparkcoreworker.perform_async') { SparkcoreWorker.perform_async }
+  handler do |job|
+    puts "Running #{job}"
+  end
+
+  every(1.minute, 'sparkcoreworker.job') { SparkcoreWorker.perform_async }
 end
