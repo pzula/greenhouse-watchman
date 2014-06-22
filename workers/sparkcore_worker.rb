@@ -3,7 +3,7 @@ class SparkcoreWorker
 
   $redis = Redis.new
 
-  def perform_async(msg ="You forgot a message")
+  def perform(msg ="You forgot a message")
     logger.info "Kicking off the SparkCore Worker!!"
 
     $redis.lpush("get_sparkcore_data", store_data)
