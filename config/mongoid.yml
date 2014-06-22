@@ -6,10 +6,10 @@ development:
         - localhost:27017
 
 
-#production:
-  #host:
-  #port: 1000
-  #username: <%= ENV['PROD_DB_USERNAME'] %>
-  #password: <%= ENV['PROD_DB_PASSWORD'] %>
-  #database: greenhouse_watchman
-
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
+      options:
+        skip_version_check: true
+        safe: true
