@@ -4,6 +4,7 @@ class SparkcoreWorker
   def perform
     logger.info "Kicking off the SparkCore Worker!!"
     store_data
+    logger.info "SparkCore Worker is done"
   end
 
   private
