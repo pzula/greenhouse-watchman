@@ -2,6 +2,7 @@ class SparkcoreWorker
   include Sidekiq::Worker
 
   def perform
+    logger.info "Kicking off the SparkCore Worker!!"
     store_data
   end
 
@@ -26,3 +27,4 @@ class SparkcoreWorker
   end
 
 end
+
