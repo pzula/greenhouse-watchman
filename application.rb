@@ -23,5 +23,5 @@ module Clockwork
     puts "Running #{job}"
   end
 
-  every(1.minute, 'sparkcoreworker.job') { SparkcoreWorker.perform_async }
+  every(10.minutes, 'sparkcoreworker.job') { SparkcoreWorker.perform_async }
 end
